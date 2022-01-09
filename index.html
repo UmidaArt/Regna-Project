@@ -6,32 +6,36 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css'>
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/media.css">
 </head>
 <body>
 <header class="header">
     <div class="container headerContainer">
         <a href="#"><img src="images/logo.png"></a>
         <nav class="menu">
-            <a class="menuLink">Home</a>
-            <a class="menuLink">About</a>
-            <a class="menuLink">Services</a>
-            <a class="menuLink">Portfolio</a>
-            <a class="menuLink">Team</a>
-            <a class="menuLink">Drop Down</a>
-            <a class="menuLink">Contact</a>
+            <a href="#hero" class="menuLink active">Home</a>
+            <a href="#about" class="menuLink">About</a>
+            <a href="#services" class="menuLink">Services</a>
+            <a href="#portfolio" class="menuLink">Portfolio</a>
+            <a href="#team" class="menuLink">Team</a>
+            <a href="#" class="menuLink">Drop Down</a>
+            <a href="#contact" class="menuLink">Contact</a>
         </nav>
+        <div class="burger">
+            <i class='bx bx-menu'></i>
+        </div>
     </div>
 </header>
-<section class="hero">
+<section id="hero" class="hero">
     <div class="container">
         <h1 class="heroTitle">Welcome to regna</h1>
         <p class="heroDesc">We are team of talented designers making websites with Bootstrap</p>
         <a href="#" class="heroBtn">Get Started</a>
     </div>
 </section>
-<section class="about">
+<section id="about" class="about">
     <div class="container">
         <div class="row">
             <div class="col-6">
@@ -83,31 +87,31 @@
         </div>
     </div>
 </section>
-<section class="facts">
+<section id="facts" class="facts">
     <div class="container">
         <h3 class="factsTitle">Facts</h3>
         <p class="factsDesc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        <ul class="factsStats">
+            <li class="factsItem">
+                <h4 class="factsNum">232</h4>
+                <p class="factsInfo">Clients</p>
+            </li>
+            <li class="factsItem">
+                <h4 class="factsNum">534</h4>
+                <p class="factsInfo">Projects</p>
+            </li>
+            <li class="factsItem">
+                <h4 class="factsNum">1463</h4>
+                <p class="factsInfo">Hours Of Support</p>
+            </li>
+            <li class="factsItem">
+                <h4 class="factsNum">42</h4>
+                <p class="factsInfo">Hard Workers</p>
+            </li>
+        </ul>
     </div>
-    <ul class="factsStats">
-        <li class="factsItem">
-            <h4 class="factsNum">232</h4>
-            <p class="factsInfo">Clients</p>
-        </li>
-        <li class="factsItem">
-            <h4 class="factsNum">534</h4>
-            <p class="factsInfo">Projects</p>
-        </li>
-        <li class="factsItem">
-            <h4 class="factsNum">1463</h4>
-            <p class="factsInfo">Hours Of Support</p>
-        </li>
-        <li class="factsItem">
-            <h4 class="factsNum">42</h4>
-            <p class="factsInfo">Hard Workers</p>
-        </li>
-    </ul>
 </section>
-<section class="services">
+<section id="services" class="services">
     <div class="container">
         <h3 class="servicesTitle">Services</h3>
         <p class="servicesInfo">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
@@ -178,10 +182,16 @@
         </div>
     </div>
 </section>
-<section class="portfolio">
+<section id="portfolio" class="portfolio">
     <div class="container">
         <h3 class="portfolioTitle">Portfolio</h3>
         <p class="portfolioText">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        <ul class="portfolioCardList">
+            <li class="portfolioCard active">All</li>
+            <li class="portfolioCard">App</li>
+            <li class="portfolioCard">Card</li>
+            <li class="portfolioCard">Web</li>
+        </ul>
         <div class="row">
             <div class="col-4">
                 <div class="portfolioItem">
@@ -357,7 +367,7 @@
         </div>
     </div>
 </section>
-<section class="team">
+<section id="team" class="team">
     <div class="container">
         <h3 class="teamTitle">Team</h3>
         <p class="teamInfo">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
@@ -449,19 +459,19 @@
         </div>
     </div>
 </section>
-<section class="contact">
-    <h3 class="contactTitle">Contact</h3>
-    <p class="contactInfo">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-    <div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22864.11283411948!2d-73.96468908098944!3d40.
-        630720240038435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+
-        York%2C+NY%2C+USA!5e0!3m2!1sen!2sbg!4v1540447494452" width="100%" height="380" frameborder="0" style="border:0"
-                allowfullscreen=""></iframe>
+<section id="contact" class="contact">
+    <div class="container">
+        <h3 class="contactTitle">Contact</h3>
+        <p class="contactInfo">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
     </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2798953384!2d-74.25986946259613!3d40.
+    69767006695183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!
+    2z0J3RjNGOLdCZ0L7RgNC6LCDQodCo0JA!5e0!3m2!1sru!2skg!4v1641495835535!5m2!1sru!2skg" width="100%" height="380"
+            style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     <div class="container">
         <div class="contactBlock">
-            <div class="row">
-                <div class="col-6">
+            <div class="row contactBlockAddClass">
+                <div class="col-3">
                     <div class="contactLinks">
                         <a href="#" class="contactAddress">
                             <i class='bx bx-map'></i>
@@ -476,25 +486,25 @@
                             <p>+1 5589 55488 55s</p>
                         </a>
                     </div>
-                    <div class="contactIcon">
-                        <a href="#" class="icon">
+                    <div class="contactIcons">
+                        <a href="#" class="contactIcon">
                             <i class='bx bxl-twitter'></i>
                         </a>
-                        <a href="#" class="icon">
+                        <a href="#" class="contactIcon">
                             <i class='bx bxl-facebook-circle' ></i>
                         </a>
-                        <a href="#" class="icon">
+                        <a href="#" class="contactIcon">
                             <i class='bx bxl-instagram-alt'></i>
                         </a>
-                        <a href="#" class="icon">
+                        <a href="#" class="contactIcon">
                             <i class='bx bxl-instagram-alt'></i>
                         </a>
-                        <a href="#" class="icon">
+                        <a href="#" class="contactIcon">
                             <i class='bx bxl-linkedin-square'></i>
                         </a>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-5">
                     <div class="contactForm">
                         <form class="form">
                             <input type="text" placeholder="Your Name" id="name" required><br>
@@ -516,5 +526,8 @@
         <p>Designed by <a href="#">BootstrapMade</a></p>
     </div>
 </footer>
+
+<script src="./js/script.js"></script>
+
 </body>
 </html>

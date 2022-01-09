@@ -1,0 +1,244 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .contactIcons {
+        text-align: center;
+    }
+
+}
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .menuLink {
+        margin-left: 10px;
+    }
+
+    .heroTitle {
+        font-size: 38px;
+    }
+
+    .heroBtn {
+        padding: 8px 18px;
+    }
+    .aboutBoxIcon {
+        width: 65px;
+        height: 65px;
+        min-width: 65px;
+    }
+    .aboutBoxIcon i {
+        font-size: 25px;
+    }
+    .factsNum {
+        font-size: 35px;
+    }
+    .portfolioItem {
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    .portfolioInfoBox {
+        padding: 5px 10px;
+    }
+    .portfolioImg {
+        object-fit: cover;
+    }
+    .portfolioInfoText h4 {
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    .portfolioInfoText p {
+        font-size: 14px;
+    }
+    .contactLinks {
+        width: 200px;
+    }
+    .col-3 {
+        width: 50%;
+    }
+    .contactIcons {
+        text-align: start;
+    }
+    .col-5 {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .headerContainer img {
+        width: 80%;
+    }
+    .burger {
+        display: block;
+        z-index: 2;
+    }
+    .menu {
+        background-color: rgba(5, 5, 5, 1);
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        left: -100%;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+        z-index: 2;
+    }
+    .menu.showMenu {
+        left: 0;
+    }
+    .menuLink {
+        font-size: 18px;
+    }
+    .menuLink:before {
+        display: none;
+    }
+    .menuLink:hover {
+        color: #2dc997;
+    }
+    .heroTitle {
+        font-size: 30px;
+    }
+    .heroDesc {
+        font-size: 18px;
+    }
+    .menuLink.active {
+        border-bottom: none;
+    }
+    .factsStats {
+        flex-wrap: wrap;
+    }
+    .factsItem {
+        margin-bottom: 20px;
+    }
+    .col-3 {
+        width: 50%;
+    }
+    .col-4 {
+        width: 50%;
+    }
+    .col-6 {
+        width: 100%;
+    }
+
+}
+@media (max-width: 576px) {
+    .container {
+        max-width: 480px;
+    }
+    .headerContainer {
+        justify-content: space-around;
+    }
+    .menuLink {
+        font-size: 16px;
+    }
+    .heroTitle {
+        margin: 0 0 30px;
+    }
+    .heroDesc {
+        margin-bottom: 35px;
+        font-size: 18px;
+    }
+    .heroBtn {
+        font-size: 14px;
+        padding: 8px 24px;
+    }
+    .about {
+        padding: 40px 0 40px;
+    }
+    .aboutTitle,
+    .factsTitle,
+    .servicesTitle,
+    .portfolioTitle,
+    .teamTitle,
+    .contactTitle {
+        font-size: 26px;
+    }
+    .aboutBoxIcon {
+        width: 50px;
+        height: 50px;
+        min-width: 50px;
+    }
+    .facts {
+        padding: 40px 0 ;
+        text-align: center;
+    }
+    .factsDesc {
+        margin-bottom: 35px;
+    }
+    .factsStats {
+
+    }
+    .col-3 {
+        width: 100%;
+    }
+    .col-4 {
+        width: 100%;
+    }
+    .col-5 {
+        width: 100%;
+    }
+    .contactLinks {
+        margin: 0 auto;
+    }
+    .contactIcons {
+        text-align: center;
+    }
+    .contactForm {
+        margin-top: 50px;
+    }
+    .factsItem {
+        width: 50%;
+    }
+    .services {
+        padding-top: 40px;
+    }
+    .servicesBox {
+        height: 200px;
+        padding: 40px 10px;
+    }
+    .servicesIcon {
+        width: 60px;
+        height: 60px;
+    }
+    .servicesBox:hover .servicesIcon {
+        width: 60px;
+        height: 60px;
+    }
+    .servicesBlock {
+        margin-bottom: 10px;
+    }
+    .portfolio {
+        padding: 40px 0;
+    }
+    .portfolioCardList {
+        flex-wrap: wrap;
+    }
+    .team {
+        padding: 40px 0;
+    }
+    .teamInfo {
+        margin-bottom: 35px;
+    }
+    .teamBox img {
+        max-width: 75%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .teamBox {
+        margin-bottom: 20px;
+    }
+    .contact {
+        padding-top: 40px;
+    }
+    .contactInfo {
+        padding-bottom: 40px;
+    }
+
+}
